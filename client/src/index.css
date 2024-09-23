@@ -1,13 +1,55 @@
+/* src/index.css or a similar global stylesheet */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif; /* Set a default font */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 1200px; /* Set a max width for larger screens */
+  margin: 0 auto; /* Center container */
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 10px 0; /* Add some spacing */
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px; /* Adjust heading size */
+  }
+  h2 {
+    font-size: 20px; /* Adjust heading size */
+  }
+  h3 {
+    font-size: 18px; /* Adjust heading size */
+  }
+}
+
+/* Make sure all images are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-theme .header {
+  background-color: #1e1e1e;
+}
+
+body.dark-theme .header .nav-links a {
+  color: #e0e0e0;
+}
+
+body.dark-theme .theme-toggle {
+  border-color: #e0e0e0;
 }
