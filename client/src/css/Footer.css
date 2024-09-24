@@ -1,0 +1,30 @@
+.text-cyan {
+    color: #00ffff !important;
+  }
+  
+  .btn-cyan {
+    background-color: #00ffff;
+    color: #000;
+  }
+  
+  .btn-cyan:hover {
+    background-color: #00cccc;
+    color: #000;
+  }
+  
+  .border-cyan {
+    border-color: #00ffff !important;
+  }
+  
+  .hover-cyan:hover {
+    color: #00ffff !important;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #00cccc !important;
+  }

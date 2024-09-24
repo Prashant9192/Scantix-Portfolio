@@ -1,6 +1,7 @@
 // src/App.js
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './includes/Header'; // Import Header
+import Footer from './includes/Footer'; // Import Footer
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Team from './pages/Team';
@@ -18,6 +19,7 @@ const App = () => (
         <Route path="*" element={<NoPage />} />
       </Route>
     </Routes>
+    <Footer /> {/* Include the Footer */}
   </BrowserRouter>
 );
 
